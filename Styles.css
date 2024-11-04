@@ -27,23 +27,23 @@ body {
 }
 
 /*-----------------Footer CSS-----------------*/
-body > footer{
+body>footer {
     background-color: #131b23;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-.footer-links{
+.footer-links {
     margin-bottom: 15px;
 }
 
-.footer-links a{
+.footer-links a {
     color: #3891A6;
     margin: 0 10px;
 }
 
-.footer-social-media{
+.footer-social-media {
     display: flex;
     justify-content: center;
     gap: 15px;
