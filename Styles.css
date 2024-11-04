@@ -8,7 +8,7 @@
 }
 
 body {
-    background: #2d2588;
+    background: #1f1c70;
     color: #ededed;
 }
 
@@ -28,7 +28,7 @@ body {
 
 /*-----------------Footer CSS-----------------*/
 body>footer {
-    background-color: #131b23;
+    background-color: #17153B;
     color: white;
     padding: 20px;
     text-align: center;
