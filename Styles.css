@@ -25,6 +25,30 @@ body {
     z-index: 100;
 }
 
+/* Footer 
+----------------------*/
+body > footer{
+    background-color: #131b23;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links{
+    margin-bottom: 15px;
+}
+
+.footer-links a{
+    color: #3891A6;
+    margin: 0 10px;
+}
+
+.footer-social-media{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 .logo {
     font-size: 25px;
     color: black;
