@@ -12,6 +12,7 @@ body {
     color: #ededed;
 }
 
+/*-----------------Header CSS-----------------*/
 .header {
     position: fixed;
     top: 0;
@@ -25,8 +26,7 @@ body {
     z-index: 100;
 }
 
-/* Footer 
-----------------------*/
+/*-----------------Footer CSS-----------------*/
 body > footer{
     background-color: #131b23;
     color: white;
@@ -49,6 +49,7 @@ body > footer{
     gap: 15px;
 }
 
+/*-----------------Logo CSS-----------------*/
 .logo {
     font-size: 25px;
     color: black;
@@ -56,6 +57,7 @@ body > footer{
     font-weight: 600;
 }
 
+/*-----------Navigation Bar CSS-----------*/
 .navbar a {
     font-size: 18px;
     color: #ededed;
@@ -70,6 +72,7 @@ body > footer{
     color: blue;
 }
 
+/*-------------Home Page CSS-------------*/
 .home {
     height: 100vh;
     display: flex;
