@@ -10,7 +10,7 @@
 
 /* Background and text color for the body */
 body {
-    background: #2E236C; /* 2. Color */
+    background: #000B58; /* 2. Color */
     color: #ededed;
 }
 
@@ -54,7 +54,7 @@ body {
 
 /*-----------------Footer CSS-----------------*/
 body>footer {
-    background-color: #17153B; /* 2. Color */
+    background-color: #031831; /* 2. Color */
     color: white;
     padding: 20px;
     text-align: center;
@@ -122,10 +122,10 @@ body>footer {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 160px;
     height: 100%;
-    background: lightseagreen; /* 2. Color */
-    border: 2px solid lightseagreen; /* 14. Border */
+    background: rgb(20, 177, 169); /* 2. Color */
+    border: 3px solid lightseagreen; /* 14. Border */
     border-radius: 8px; /* 15. Rounded corners */
     font-size: 19px;
     color: black;
@@ -138,12 +138,12 @@ body>footer {
 }
 
 .btn-box a:hover {
-    color: rgb(60, 0, 255); /* 7. User action pseudo-class */
+    color: rgb(7, 80, 215); /* 7. User action pseudo-class */
 }
 
 .btn-box a:nth-child(2) {
     background: transparent; /* 2. Color */
-    color: aquamarine;
+    color: rgb(7, 80, 215);
 }
 
 .btn-box a:nth-child(2):hover {
@@ -151,7 +151,7 @@ body>footer {
 }
 
 .btn-box a:nth-child(2)::before {
-    background: aquamarine; /* 6. Pseudo-element with generated content */
+    background: rgb(20, 177, 169); /* 6. Pseudo-element with generated content */
 }
 
 /* Button background animation */
@@ -162,7 +162,7 @@ body>footer {
     left: 0;
     width: 0;
     height: 100%;
-    background: rgb(4, 205, 168);
+    background: #000B58;
     z-index: -1;
     transition: .5s;
 }
