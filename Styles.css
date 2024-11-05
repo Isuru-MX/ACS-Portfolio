@@ -322,6 +322,51 @@ body>footer {
     text-align: center;
 }
 
+/*======================About page========================*/
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    flex-direction: row;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+.about-content {
+    position: absolute;
+    right: 150px;
+    max-width: 45%;
+    margin-top: 100px;
+    display: grid;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.about-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: aqua;
+}
+
+.about-content p {
+    font-size: 16px;
+    text-align: justify;
+    margin: 20px 0 40px;
+}
+
 /*=======================Personal page==================*/
 
 .hobbies-container h1 {
