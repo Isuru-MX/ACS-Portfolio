@@ -5,12 +5,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* 1. Font - Google Fonts */
+    font-family: 'Poppins', sans-serif;
+    /* 1. Font - Google Fonts */
 }
 
 /* Background and text color for the body */
 body {
-    background: #000B58; /* 2. Color */
+    background: #000B58;
+    /* 2. Color */
     color: #ededed;
 }
 
@@ -20,8 +22,8 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
-    background: transparent;
+    padding: 0px 10%;
+    background: rgba(0, 11, 88, 0.8);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,18 +46,22 @@ body {
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
-    transition: .3s; /* 18. Transition */
+    transition: .3s;
+    /* 18. Transition */
 }
 
 .navbar a:hover,
 .navbar a.active {
-    color: rgb(0, 145, 255); /* 7. User action pseudo-class */
-    text-shadow: 5px 5px 6px rgba(0, 140, 186, 0.5); /* 3. Shadow */
+    color: rgb(0, 145, 255);
+    /* 7. User action pseudo-class */
+    text-shadow: 5px 5px 6px rgba(0, 140, 186, 0.5);
+    /* 3. Shadow */
 }
 
 /*-----------------Footer CSS-----------------*/
 body>footer {
-    background-color: #031831; /* 2. Color */
+    background-color: #031831;
+    /* 2. Color */
     color: white;
     padding: 20px;
     text-align: center;
@@ -71,7 +77,8 @@ body>footer {
 }
 
 .footer-links a:hover {
-    color: rgb(5, 202, 202); /* 7. User action pseudo-class */
+    color: rgb(5, 202, 202);
+    /* 7. User action pseudo-class */
 }
 
 .footer-social-media {
@@ -83,14 +90,26 @@ body>footer {
 
 /*-------------Home Page CSS-------------*/
 .home {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     padding: 0 10%;
+    flex-direction: row;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+        flex-direction: column;
+    }
 }
 
 .home-content {
-    max-width: 600px;
+    max-width: 60%;
+    margin-top: 100px;
+    display: grid;
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
 }
 
 .home-content h1 {
@@ -125,25 +144,32 @@ body>footer {
     align-items: center;
     width: 160px;
     height: 100%;
-    background: rgb(20, 177, 169); /* 2. Color */
-    border: 3px solid lightseagreen; /* 14. Border */
-    border-radius: 8px; /* 15. Rounded corners */
+    background: rgb(20, 177, 169);
+    /* 2. Color */
+    border: 3px solid lightseagreen;
+    /* 14. Border */
+    border-radius: 8px;
+    /* 15. Rounded corners */
     font-size: 19px;
     color: black;
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 1px; /* 4. Text effects */
+    letter-spacing: 1px;
+    /* 4. Text effects */
     z-index: 1;
     overflow: hidden;
-    transition: .5s; /* 18. Transition */
+    transition: .5s;
+    /* 18. Transition */
 }
 
 .btn-box a:hover {
-    color: rgb(7, 80, 215); /* 7. User action pseudo-class */
+    color: rgb(7, 80, 215);
+    /* 7. User action pseudo-class */
 }
 
 .btn-box a:nth-child(2) {
-    background: transparent; /* 2. Color */
+    background: transparent;
+    /* 2. Color */
     color: rgb(7, 80, 215);
 }
 
@@ -152,12 +178,14 @@ body>footer {
 }
 
 .btn-box a:nth-child(2)::before {
-    background: rgb(20, 177, 169); /* 6. Pseudo-element with generated content */
+    background: rgb(20, 177, 169);
+    /* 6. Pseudo-element with generated content */
 }
 
 /* Button background animation */
 .btn-box a::before {
-    content: ''; /* 6. Pseudo-element with generated content */
+    content: '';
+    /* 6. Pseudo-element with generated content */
     position: absolute;
     top: 0;
     left: 0;
@@ -169,69 +197,129 @@ body>footer {
 }
 
 .btn-box a:hover::before {
-    width: 100%; /* 19. Animation (in combination with transition) */
+    width: 100%;
+    /* 19. Animation (in combination with transition) */
 }
 
 /*------------Social icons--------*/
 .home-social-icons {
-    position: absolute;
-    bottom: 40px;
     width: 200px;
     display: flex;
+    margin-block: 40px;
     justify-content: space-between;
 }
 
 .home-social-icons a {
-    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid lightseagreen; /* 14. Border */
-    border-radius: 50%; /* 15. Rounded corners */
+    border: 2px solid lightseagreen;
+    /* 14. Border */
+    border-radius: 50%;
+    /* 15. Rounded corners */
     font-size: 20px;
     color: lightseagreen;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
-    transition: .5s; /* 18. Transition */
+    transition: .5s;
+    /* 18. Transition */
 }
 
 .home-social-icons a:hover {
-    color: black; /* 7. User action pseudo-class */
+    color: black;
+    /* 7. User action pseudo-class */
 }
 
 .home-social-icons a::before {
-    content: ''; /* 6. Pseudo-element with generated content */
-    position: absolute;
-    top: 0;
-    left: 0;
+    content: '';
+    /* 6. Pseudo-element with generated content */
     width: 0;
     height: 100%;
     background: lightseagreen;
     z-index: -1;
-    transition: .5s; /* 18. Transition */
+    transition: .5s;
+    /* 18. Transition */
 }
 
 .home-social-icons a:hover::before {
-    width: 100%; /* 19. Animation (in combination with transition) */
+    width: 100%;
+    /* 19. Animation (in combination with transition) */
 }
 
 /*------------Image styling-------------*/
 .home-photo {
-    width: 30%;
-    height: auto;
-    position: absolute;
-    bottom: 15px;
-    right: 150px;
+    height: 80vh;
     padding: 10px;
-    padding-bottom: 0;
-    border: 3px solid #24a1ea; /* 14. Border */
-    border-radius: 15px; /* 15. Rounded corners */
+    margin-bottom: 40px;
+    border: 3px solid #24a1ea;
+    /* 14. Border */
+    margin-top: 100px;
+    margin-inline: 20px;
+    border-radius: 15px;
+    /* 15. Rounded corners */
+
+    @media only screen and (max-width: 768px) {
+        height: auto;
+        margin-top: 0px;
+        width: 100%;
+    }
+}
+
+.home-photo img {
+    height: 100%;
+    object-fit: cover;
+
+    @media only screen and (max-width: 768px) {
+        height: auto;
+        width: 100%;
+    }
 }
 
 .home-photo:hover {
-    box-shadow: 0 0 30px 4px rgba(0, 140, 186, 0.5); /* 3. Shadow */
+    box-shadow: 0 0 30px 4px rgba(0, 140, 186, 0.5);
+    /* 3. Shadow */
+}
+
+.contact {
+    min-height: calc(100vh - 233px);
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+}
+
+.contact-container {
+    width: 80vw;
+}
+
+.contact-form {
+    display: grid;
+}
+
+.hobbies {
+    min-height: calc(100vh - 233px);
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: grid;
+    justify-content: center;
+}
+
+.hobbies-container {
+    width: 80vw;
+    display: grid;
+    gap: 40px;
+}
+
+
+.hobbies-card {
+    display: grid;
+    gap: 10px;
+}
+
+.hobbies-img {
+    width: 100%;
+    text-align: center;
 }
