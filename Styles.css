@@ -325,3 +325,27 @@ body>footer {
 }
 
 /*=======================Personal page==================*/
+
+.hobbies-container h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.hobbies-container h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: aqua;
+}
+
+.hobbies-container p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.hobbies-card {
+    padding: 30px;
+    border: 3px solid #24a1ea;
+    border-radius: 30px;
+    background: #0270af;
+}
