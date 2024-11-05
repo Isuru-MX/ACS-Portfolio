@@ -254,11 +254,13 @@ body>footer {
 .home-photo {
     height: 80vh;
     padding: 10px;
-    margin-bottom: 40px;
-    border: 3px solid #24a1ea; /* 14. Border */
     margin-top: 100px;
+    margin-bottom: 40px;
     margin-inline: 20px;
-    border-radius: 15px; /* 15. Rounded corners */
+    border: 3px solid #24a1ea;
+    /* 14. Border */
+    border-radius: 15px;
+    /* 15. Rounded corners */
 
     @media only screen and (max-width: 768px) {
         height: auto;
@@ -282,46 +284,6 @@ body>footer {
     /* 3. Shadow */
 }
 
-.contact {
-    min-height: calc(100vh - 233px);
-    margin-top: 100px;
-    display: grid;
-    justify-content: center;
-}
-
-.contact-container {
-    width: 80vw;
-}
-
-.contact-form {
-    display: grid;
-}
-
-.hobbies {
-    min-height: calc(100vh - 233px);
-    margin-top: 100px;
-    margin-bottom: 40px;
-    display: grid;
-    justify-content: center;
-}
-
-.hobbies-container {
-    width: 80vw;
-    display: grid;
-    gap: 40px;
-}
-
-
-.hobbies-card {
-    display: grid;
-    gap: 10px;
-}
-
-.hobbies-img {
-    width: 100%;
-    text-align: center;
-}
-
 /*======================About page========================*/
 
 .about {
@@ -340,7 +302,7 @@ body>footer {
 .about-content {
     position: absolute;
     right: 150px;
-    max-width: 45%;
+    max-width: 50%;
     margin-top: 100px;
     display: grid;
 
@@ -367,7 +329,55 @@ body>footer {
     margin: 20px 0 40px;
 }
 
+/*------------Image styling-------------*/
+.about-photo {
+    height: 80vh;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-inline: 20px;
+    border: 3px solid #24a1ea;
+    /* 14. Border */
+    border-radius: 15px;
+    /* 15. Rounded corners */
+
+    @media only screen and (max-width: 768px) {
+        height: auto;
+        margin-top: 0px;
+        width: 100%;
+    }
+}
+
+.about-photo img {
+    height: 100%;
+    object-fit: cover;
+
+    @media only screen and (max-width: 768px) {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.about-photo:hover {
+    box-shadow: 0 0 30px 4px rgba(0, 140, 186, 0.5);
+    /* 3. Shadow */
+}
+
 /*=======================Personal page==================*/
+
+.hobbies {
+    min-height: calc(100vh - 233px);
+    margin-top: 100px;
+    margin-bottom: 40px;
+    display: grid;
+    justify-content: center;
+}
+
+.hobbies-container {
+    width: 80vw;
+    display: grid;
+    gap: 40px;
+}
 
 .hobbies-container h1 {
     font-size: 56px;
@@ -389,6 +399,8 @@ body>footer {
 
 .hobbies-card-1,
 .hobbies-card-2 {
+    display: grid;
+    gap: 10px;
     padding: 30px;
     border: 4px solid #24a1ea;
     border-radius: 30px;
@@ -397,14 +409,31 @@ body>footer {
 
 .hobbies-card-1 {
     background-image: url("Image 1.jpg");
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     background-blend-mode: lighten;
     background-attachment: fixed;
 }
 
 .hobbies-card-2 {
     background-image: url("Image 2.jpg");
-    background-color: rgba(255,255,255,0.3);
+    background-color: rgba(255, 255, 255, 0.3);
     background-blend-mode: lighten;
     background-attachment: fixed;
+}
+
+/*======================Form page========================*/
+
+.contact {
+    min-height: calc(100vh - 233px);
+    margin-top: 100px;
+    display: grid;
+    justify-content: center;
+}
+
+.contact-container {
+    width: 80vw;
+}
+
+.contact-form {
+    display: grid;
 }
