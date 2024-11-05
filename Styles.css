@@ -1,14 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Global reset and font setup */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* 1. Font - Google Fonts */
 }
 
+/* Background and text color for the body */
 body {
-    background: #2E236C;
+    background: #2E236C; /* 2. Color */
     color: #ededed;
 }
 
@@ -26,9 +28,32 @@ body {
     z-index: 100;
 }
 
+/*---------------Logo CSS---------------*/
+.logo {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*-----------Navigation Bar CSS-----------*/
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .3s; /* 18. Transition */
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(0, 145, 255); /* 7. User action pseudo-class */
+}
+
 /*-----------------Footer CSS-----------------*/
 body>footer {
-    background-color: #17153B;
+    background-color: #17153B; /* 2. Color */
     color: white;
     padding: 20px;
     text-align: center;
@@ -44,7 +69,7 @@ body>footer {
 }
 
 .footer-links a:hover {
-    color: rgb(5, 202, 202);
+    color: rgb(5, 202, 202); /* 7. User action pseudo-class */
 }
 
 .footer-social-media {
@@ -52,29 +77,6 @@ body>footer {
     display: flex;
     justify-content: center;
     gap: 15px;
-}
-
-/*-----------------Logo CSS-----------------*/
-.logo {
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-/*-----------Navigation Bar CSS-----------*/
-.navbar a {
-    font-size: 18px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
-}
-
-.navbar a:hover,
-.navbar a.active {
-    color: rgb(0, 145, 255);
 }
 
 /*-------------Home Page CSS-------------*/
@@ -113,6 +115,7 @@ body>footer {
     height: 50px;
 }
 
+/*----------Button styles--------------*/
 .btn-box a {
     position: relative;
     display: inline-flex;
@@ -120,25 +123,25 @@ body>footer {
     align-items: center;
     width: 150px;
     height: 100%;
-    background: lightseagreen;
-    border: 2px solid lightseagreen;
-    border-radius: 8px;
+    background: lightseagreen; /* 2. Color */
+    border: 2px solid lightseagreen; /* 14. Border */
+    border-radius: 8px; /* 15. Rounded corners */
     font-size: 19px;
     color: black;
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 1px;
+    letter-spacing: 1px; /* 4. Text effects */
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: .5s; /* 18. Transition */
 }
 
 .btn-box a:hover {
-    color: rgb(60, 0, 255);
+    color: rgb(60, 0, 255); /* 7. User action pseudo-class */
 }
 
 .btn-box a:nth-child(2) {
-    background: transparent;
+    background: transparent; /* 2. Color */
     color: aquamarine;
 }
 
@@ -147,11 +150,12 @@ body>footer {
 }
 
 .btn-box a:nth-child(2)::before {
-    background: aquamarine;
+    background: aquamarine; /* 6. Pseudo-element with generated content */
 }
 
+/* Button background animation */
 .btn-box a::before {
-    content: '';
+    content: ''; /* 6. Pseudo-element with generated content */
     position: absolute;
     top: 0;
     left: 0;
@@ -163,9 +167,10 @@ body>footer {
 }
 
 .btn-box a:hover::before {
-    width: 100%;
+    width: 100%; /* 19. Animation (in combination with transition) */
 }
 
+/*------------Social icons--------*/
 .home-social-icons {
     position: absolute;
     bottom: 40px;
@@ -182,22 +187,22 @@ body>footer {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid lightseagreen;
-    border-radius: 50%;
+    border: 2px solid lightseagreen; /* 14. Border */
+    border-radius: 50%; /* 15. Rounded corners */
     font-size: 20px;
     color: lightseagreen;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
+    transition: .5s; /* 18. Transition */
 }
 
 .home-social-icons a:hover {
-    color: black;
+    color: black; /* 7. User action pseudo-class */
 }
 
 .home-social-icons a::before {
-    content: '';
+    content: ''; /* 6. Pseudo-element with generated content */
     position: absolute;
     top: 0;
     left: 0;
@@ -205,13 +210,14 @@ body>footer {
     height: 100%;
     background: lightseagreen;
     z-index: -1;
-    transition: .5s;
+    transition: .5s; /* 18. Transition */
 }
 
 .home-social-icons a:hover::before {
-    width: 100%;
+    width: 100%; /* 19. Animation (in combination with transition) */
 }
 
+/*------------Image styling-------------*/
 .home-photo {
     width: 30%;
     height: auto;
@@ -220,10 +226,10 @@ body>footer {
     right: 150px;
     padding: 10px;
     padding-bottom: 0;
-    border: 3px solid #24a1ea;
-    border-radius: 15px;
+    border: 3px solid #24a1ea; /* 14. Border */
+    border-radius: 15px; /* 15. Rounded corners */
 }
 
 .home-photo:hover {
-    box-shadow: 0 0 20px 2px rgba(0, 140, 186, 0.5);
+    box-shadow: 0 0 20px 2px rgba(0, 140, 186, 0.5); /* 3. Shadow */
 }
