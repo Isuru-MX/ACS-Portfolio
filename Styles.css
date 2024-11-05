@@ -16,7 +16,7 @@ body {
     color: #ededed;
 }
 
-/*-----------------Header CSS-----------------*/
+/*===================Header CSS=====================*/
 .header {
     position: fixed;
     top: 0;
@@ -58,7 +58,7 @@ body {
     /* 3. Shadow */
 }
 
-/*-----------------Footer CSS-----------------*/
+/*====================Footer CSS=====================*/
 body>footer {
     background-color: #031831;
     /* 2. Color */
@@ -88,7 +88,7 @@ body>footer {
     gap: 15px;
 }
 
-/*-------------Home Page CSS-------------*/
+/*================================Home Page CSS=========================*/
 .home {
     min-height: 100vh;
     display: flex;
@@ -323,3 +323,5 @@ body>footer {
     width: 100%;
     text-align: center;
 }
+
+/*=======================Personal page==================*/
