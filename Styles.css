@@ -5,8 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    /* 1. Font - Google Fonts */
+    font-family: 'Poppins', sans-serif; /* 1. Font - Google Fonts */
 }
 
 /* Background and text color for the body */
@@ -17,7 +16,9 @@ body {
 }
 
 /*===================Header CSS=====================*/
-.header {
+
+/* 8.Child combinator */
+body>header {
     position: fixed;
     top: 0;
     left: 0;
@@ -52,16 +53,15 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: rgb(0, 145, 255);
-    /* 7. User action pseudo-class */
-    text-shadow: 5px 5px 6px rgba(0, 140, 186, 0.5);
-    /* 3. Shadow */
+    color: rgb(0, 145, 255); /* 7. User action pseudo-class */
+    text-shadow: 5px 5px 6px rgba(0, 140, 186, 0.5); /* 3. Shadow */
 }
 
 /*====================Footer CSS=====================*/
+
+/* 8.Child combinator */
 body>footer {
-    background-color: #031831;
-    /* 2. Color */
+    background-color: #031831; /* 2. Color */
     color: white;
     padding: 20px;
     text-align: center;
@@ -77,8 +77,7 @@ body>footer {
 }
 
 .footer-links a:hover {
-    color: rgb(5, 202, 202);
-    /* 7. User action pseudo-class */
+    color: rgb(5, 202, 202); /* 7. User action pseudo-class */
 }
 
 .footer-social-media {
@@ -144,32 +143,25 @@ body>footer {
     align-items: center;
     width: 160px;
     height: 100%;
-    background: rgb(20, 177, 169);
-    /* 2. Color */
-    border: 3px solid lightseagreen;
-    /* 14. Border */
-    border-radius: 8px;
-    /* 15. Rounded corners */
+    background: rgb(20, 177, 169); /* 2. Color */
+    border: 3px solid lightseagreen; /* 14. Border */
+    border-radius: 8px; /* 15. Rounded corners */
     font-size: 19px;
     color: black;
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 1px;
-    /* 4. Text effects */
+    letter-spacing: 1px; /* 4. Text effects */
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
-    /* 18. Transition */
+    transition: .5s; /* 18. Transition */
 }
 
 .btn-box a:hover {
-    color: rgb(7, 80, 215);
-    /* 7. User action pseudo-class */
+    color: rgb(7, 80, 215); /* 7. User action pseudo-class */
 }
 
 .btn-box a:nth-child(2) {
-    background: transparent;
-    /* 2. Color */
+    background: transparent; /* 2. Color */
     color: rgb(7, 80, 215);
 }
 
@@ -177,15 +169,16 @@ body>footer {
     color: black;
 }
 
+/* 6. Pseudo-element with generated content */
 .btn-box a:nth-child(2)::before {
-    background: rgb(20, 177, 169);
-    /* 6. Pseudo-element with generated content */
+    background: rgb(20, 177, 169); 
 }
 
 /* Button background animation */
+
+/* 6. Pseudo-element with generated content */
 .btn-box a::before {
     content: '';
-    /* 6. Pseudo-element with generated content */
     position: absolute;
     top: 0;
     left: 0;
@@ -196,9 +189,9 @@ body>footer {
     transition: .5s;
 }
 
+/* 19. Animation (in combination with transition) */
 .btn-box a:hover::before {
     width: 100%;
-    /* 19. Animation (in combination with transition) */
 }
 
 /*------------Social icons--------*/
@@ -216,38 +209,34 @@ body>footer {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid lightseagreen;
-    /* 14. Border */
-    border-radius: 50%;
-    /* 15. Rounded corners */
+    border: 2px solid lightseagreen; /* 14. Border */
+    border-radius: 50%; /* 15. Rounded corners */
     font-size: 20px;
     color: lightseagreen;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
-    transition: .5s;
-    /* 18. Transition */
+    transition: .5s; /* 18. Transition */
 }
 
+/* 7. User action pseudo-class */
 .home-social-icons a:hover {
     color: black;
-    /* 7. User action pseudo-class */
 }
 
+/* 6. Pseudo-element with generated content */
 .home-social-icons a::before {
     content: '';
-    /* 6. Pseudo-element with generated content */
     width: 0;
     height: 100%;
     background: lightseagreen;
     z-index: -1;
-    transition: .5s;
-    /* 18. Transition */
+    transition: .5s; /* 18. Transition */
 }
 
+/* 19. Animation (in combination with transition) */
 .home-social-icons a:hover::before {
     width: 100%;
-    /* 19. Animation (in combination with transition) */
 }
 
 /*------------Image styling-------------*/
@@ -257,10 +246,8 @@ body>footer {
     margin-top: 100px;
     margin-bottom: 40px;
     margin-inline: 20px;
-    border: 3px solid #24a1ea;
-    /* 14. Border */
-    border-radius: 15px;
-    /* 15. Rounded corners */
+    border: 3px solid #24a1ea; /* 14. Border */
+    border-radius: 15px; /* 15. Rounded corners */
 
     @media only screen and (max-width: 768px) {
         height: auto;
@@ -280,8 +267,7 @@ body>footer {
 }
 
 .home-photo:hover {
-    box-shadow: 0 0 30px 4px rgba(0, 140, 186, 0.5);
-    /* 3. Shadow */
+    box-shadow: 0 0 30px 4px rgba(0, 140, 186, 0.5); /* 3. Shadow */
 }
 
 /*======================About page========================*/
@@ -337,10 +323,8 @@ body>footer {
     margin-top: 100px;
     margin-bottom: 40px;
     margin-inline: 20px;
-    border: 3px solid #24a1ea;
-    /* 14. Border */
-    border-radius: 15px;
-    /* 15. Rounded corners */
+    border: 3px solid #24a1ea; /* 14. Border */
+    border-radius: 15px; /* 15. Rounded corners */
 
     @media only screen and (max-width: 768px) {
         height: auto;
@@ -360,8 +344,7 @@ body>footer {
 }
 
 .about-photo:hover {
-    box-shadow: 0 0 30px 4px rgba(0, 140, 186, 0.5);
-    /* 3. Shadow */
+    box-shadow: 0 0 30px 4px rgba(0, 140, 186, 0.5); /* 3. Shadow */
 }
 
 /*=======================Personal page==================*/
@@ -433,6 +416,10 @@ body>footer {
     padding: 100px 0;
 }
 
+.contact h1 {
+    font-size: 40px;
+}
+
 .contact-container {
     background-color: #ffffff;
     padding: 30px;
@@ -465,6 +452,11 @@ body>footer {
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
+
+.contact-form input:valid {
+    background-color: beige;
+    border: 2px solid green;
+  }
 
 /* Button Styling */
 .send-button {
