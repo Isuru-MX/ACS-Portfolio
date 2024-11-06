@@ -326,6 +326,7 @@ body>footer {
 .about-content p {
     font-size: 16px;
     text-align: justify;
+    line-height: 2;
     margin: 20px 0 40px;
 }
 
@@ -388,7 +389,7 @@ body>footer {
 .hobbies-container h3 {
     font-size: 32px;
     font-weight: 700;
-    color: aqua;
+    color: rgb(21, 234, 241);
 }
 
 .hobbies-container p {
